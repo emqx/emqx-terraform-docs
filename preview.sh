@@ -16,8 +16,8 @@ docker rm terraform-doc-preview || true
 
 docker run -p ${PORT}:8080 -it --name terraform-doc-preview \
     -v "$THIS_DIR"/directory.json:/app/docs/.vuepress/config/directory.json \
-    -v "$THIS_DIR"/en_US:/app/docs/en/terraform/latest \
-    -v "$THIS_DIR"/zh_CN:/app/docs/zh/terraform/latest \
-    -e DOCS_TYPE=terraform \
+    -v "$THIS_DIR"/en_US:/app/docs/en/emqx-terraform/latest \
+    -v "$THIS_DIR"/zh_CN:/app/docs/zh/emqx-terraform/latest \
+    -e DOCS_TYPE=emqx-terraform \
     -e VERSION=latest \
 ghcr.io/emqx/docs-emqx-com-frontend:latest
