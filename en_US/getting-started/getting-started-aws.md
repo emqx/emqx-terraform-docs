@@ -30,8 +30,6 @@ terraform apply -auto-approve -var="ee_lic=${ee_lic}" -var="region=${region}"
 ```
 Note: You have to apply a emqx license if you deploy emqx enterprise.
 
-More variables please refer to [doc](docs/variables.md)
-
 After apply successfully, it will output:
 ```bash
 Outputs:

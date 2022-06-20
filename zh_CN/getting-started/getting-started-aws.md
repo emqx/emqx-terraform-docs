@@ -30,7 +30,6 @@ terraform apply -auto-approve -var="ee_lic=${ee_lic}" -var="region=${region}"
 ```
 **Note:** 如果部署企业版你需要申请一个license
 
-
 如果apply成功，将输出：
 ```bash
 Outputs:
