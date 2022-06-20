@@ -9,4 +9,4 @@ Terraform is a declarative coding tool that allows developers to describe the in
 ./preview.sh 8080
 ```
 
-Now, open <http://localhost:8080/en/terraform/latest/>, if `directory.json` has been updated, you can re-run the above command to update the docs.
+Now, open <http://localhost:8080/en/emqx-terraform/latest/>, if `directory.json` has been updated, you can re-run the above command to update the docs.
