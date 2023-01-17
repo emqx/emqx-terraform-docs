@@ -1,6 +1,14 @@
 # Deploy on AWS
 
-> Default Region：us-east-1
+## Compatability
+
+|                          | EMQX 4.4.x      |
+|--------------------------|-----------------|
+| ubuntu 20.04             | ✓               |
+
+> **Note**
+
+> Not support EMQX 5.x currently
 
 ## Install terraform
 > Please refer to [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
@@ -26,9 +34,12 @@ terraform apply -auto-approve
 cd services/emqx_cluster
 terraform init
 terraform plan
-terraform apply -auto-approve -var="ee_lic=${ee_lic}" -var="region=${region}"
+terraform apply -auto-approve
 ```
-Note: You have to apply a emqx license if you deploy emqx enterprise.
+
+> **Note**
+
+> You should apply for an emqx license if you want more than 10 quotas when deploying emqx enterprise.
 
 After apply successfully, it will output:
 ```bash
@@ -52,8 +63,6 @@ WSS: ${prefix}.elb.${region}.amazonaws.com:8084
 ```bash
 terraform destroy -auto-approve
 ```
-
-**Note:** Due to ubuntu 20.04 of node installed, you need to config emqx package associate with corresponding os version.
 
 
 
