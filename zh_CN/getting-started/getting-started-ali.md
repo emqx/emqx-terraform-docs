@@ -1,19 +1,29 @@
 # 阿里云上部署
 
-> 默认安装Region：cn-shenzhen
+## 兼容性
 
-## 安装terraform
+|                          | EMQX 4.4.x      |
+|--------------------------|-----------------|
+| ubuntu 20.04             | ✓               |
+
+> **Note**
+
+> 当前不支持 EMQX 5.x
+不支持 TLS
+
+## 安装 terraform
 > 请参考 [terraform安装文档](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 
-## 阿里云AccessKey Pair
+## 阿里云 AccessKey Pair
+
 ```bash
 export ALICLOUD_ACCESS_KEY="anaccesskey"
 export ALICLOUD_SECRET_KEY="asecretkey"
 export ALICLOUD_REGION="cn-shenzhen"
 ```
 
-## 部署EMQ X单节点
+## 部署 EMQ X 单节点
 ```bash
 cd services/emqx
 terraform init
@@ -21,7 +31,7 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-## 销毁EMQ X集群（默认 2 节点）
+## 销毁 EMQ X 集群（默认 2 节点）
 ```bash
 cd services/emqx_cluster
 terraform init
@@ -29,12 +39,15 @@ terraform plan
 terraform apply -auto-approve
 ```
 
+> **Note**
+
+> 如果部署企业版你需要申请一个 license, 否则只有10个客户端
+
 ## 销毁
 ```bash
 terraform destroy -auto-approve
 ```
 
 
-**Note:** 由于节点用的是ubuntu 20.04，所以你需要指定相应操作系统的EMQX安装包
 
 

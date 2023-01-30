@@ -1,4 +1,4 @@
-# 核心功能
+# Features
 
 - Infrastructure as Code
 > When the resource state is maintained through code, the state version can be controlled and the infrastructure can be shared.

@@ -1,18 +1,31 @@
 # AWS上部署
 
-> 默认安装Region：us-east-1
 
-## 安装terraform
+## 兼容性
+
+|                          | EMQX 4.4.x      |
+|--------------------------|-----------------|
+| ubuntu 20.04             | ✓               |
+
+> **Note**
+
+> 当前不支持 EMQX 5.x
+
+
+## 安装 terraform
+
 > 请参考 [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 
-## 配置AWS AccessKey Pair
+## 配置 AWS AccessKey Pair
+
 ```bash
 export AWS_ACCESS_KEY_ID="anaccesskey"
 export AWS_SECRET_ACCESS_KEY="asecretkey"
 ```
 
-## 部署EMQX单节点
+## 部署 EMQX 单节点
+
 ```bash
 cd services/emqx
 terraform init
@@ -21,23 +34,27 @@ terraform apply -auto-approve
 ```
 
 
-## 部署EMQX集群
+## 部署 EMQX 集群
+
 ```bash
 cd services/emqx_cluster
 terraform init
 terraform plan
-terraform apply -auto-approve -var="ee_lic=${ee_lic}" -var="region=${region}"
+terraform apply -auto-approve
 ```
-**Note:** 如果部署企业版你需要申请一个license
+> **Note**
 
-如果apply成功，将输出：
+> 如果部署企业版你需要申请一个 license, 否则只有10个客户端
+
+如果 apply 成功，将输出：
+
 ```bash
 Outputs:
 
 emqx_cluster_address = "${prefix}.elb.${region}.amazonaws.com"
 ```
 
-如果你想绑定一个域名，你需要配置CNAME
+如果你想绑定一个域名，你需要配置 CNAME
 
 你能访问不同的服务通过不同的端口
 ```bash
@@ -52,5 +69,3 @@ WSS: ${prefix}.elb.${region}.amazonaws.com:8084
 ```bash
 terraform destroy -auto-approve
 ```
-
-**Note:** 由于节点用的是ubuntu 20.04，所以你需要指定相应操作系统的EMQX安装包

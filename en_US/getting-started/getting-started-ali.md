@@ -1,6 +1,15 @@
 # Deploy on Ali Cloud
 
-> Default Region：cn-shenzhen
+## Compatability
+
+|                          | EMQX 4.4.x      |
+|--------------------------|-----------------|
+| ubuntu 20.04             | ✓               |
+
+> **Note**
+
+> Not support EMQX 5.x currently
+Not support TLS
 
 ## Install terraform
 > Please refer to [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
@@ -21,6 +30,10 @@ terraform plan
 terraform apply -auto-approve
 ```
 
+> **Note**
+
+> You should apply for an emqx license if you want more than 10 quotas when deploying emqx enterprise.
+
 
 ## Deploy EMQ X cluster(default 2 node)
 ```bash
@@ -34,7 +47,5 @@ terraform apply -auto-approve
 ```bash
 terraform destroy -auto-approve
 ```
-
-**Note:** Due to ubuntu 20.04 of node installed, you need to config emqx package associate with corresponding os version.
 
 

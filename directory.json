@@ -25,21 +25,12 @@
           "path": "getting-started/getting-started-aws"
         },
         {
-          "title": "AliCloud",
-          "path": "getting-started/getting-started-ali"
-        }
-      ]
-    },
-    {
-      "title": "Default Configurations",
-      "children": [
-        {
-          "title": "AWS",
-          "path": "configuration/aws"
+          "title": "Azure",
+          "path": "getting-started/getting-started-azure"
         },
         {
-          "title": "Ali Cloud",
-          "path": "configuration/ali"
+          "title": "AliCloud",
+          "path": "getting-started/getting-started-ali"
         }
       ]
     }
@@ -70,21 +61,12 @@
           "path": "getting-started/getting-started-aws"
         },
         {
-          "title": "阿里云",
-          "path": "getting-started/getting-started-ali"
-        }
-      ]
-    },
-    {
-      "title": "默认配置",
-      "children": [
-        {
-          "title": "AWS",
-          "path": "configuration/aws"
+          "title": "Azure",
+          "path": "getting-started/getting-started-azure"
         },
         {
           "title": "阿里云",
-          "path": "configuration/ali"
+          "path": "getting-started/getting-started-ali"
         }
       ]
     }
