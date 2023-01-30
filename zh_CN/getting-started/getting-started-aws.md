@@ -9,7 +9,7 @@
 
 > **Note**
 
-> 当前不支持 EMQX 5.x
+- 当前不支持 EMQX 5.x
 
 
 ## 安装 terraform
