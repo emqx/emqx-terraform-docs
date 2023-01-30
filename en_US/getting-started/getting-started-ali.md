@@ -8,8 +8,8 @@
 
 > **Note**
 
-> Not support EMQX 5.x currently
-Not support TLS
+- Not support EMQX 5.x currently
+- Not support TLS
 
 ## Install terraform
 > Please refer to [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)

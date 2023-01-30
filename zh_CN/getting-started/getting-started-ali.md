@@ -8,8 +8,8 @@
 
 > **Note**
 
-> 当前不支持 EMQX 5.x
-不支持 TLS
+- 当前不支持 EMQX 5.x
+- 不支持 TLS
 
 ## 安装 terraform
 > 请参考 [terraform安装文档](https://learn.hashicorp.com/tutorials/terraform/install-cli)

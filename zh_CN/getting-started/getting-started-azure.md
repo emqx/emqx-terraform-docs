@@ -8,12 +8,13 @@
 
 > **Note**
 
-> 当前不支持 EMQX 5.x
-不支持 TLS
+- 当前不支持 EMQX 5.x
+- 不支持 TLS
 
 
 ## 安装 terraform
-Please refer to [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+> 请参考 [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 
 ## 配置 azure 证书
