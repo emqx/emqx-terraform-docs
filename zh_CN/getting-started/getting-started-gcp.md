@@ -1,4 +1,4 @@
-# Azure上部署
+# GCP 上部署
 
 ## 兼容性
 
@@ -17,22 +17,9 @@
 > 请参考 [terraform install doc](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 
-## 配置 azure 证书
-参考这篇文档 [guide](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)
-```bash
-export ARM_SUBSCRIPTION_ID=${ARM_SUBSCRIPTION_ID}
-export ARM_TENANT_ID=${ARM_TENANT_ID}
-export ARM_CLIENT_ID=${ARM_CLIENT_ID}
-export ARM_CLIENT_SECRET=${ARM_CLIENT_SECRET}
-```
-
-## 部署 EMQX 单节点
-```bash
-cd services/emqx
-terraform init
-terraform plan
-terraform apply -auto-approve
-```
+## 配置GCP 证书
+参考这篇文档
+[guide](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#adding-credentials)
 
 
 ## 部署 EMQX 集群
@@ -52,14 +39,14 @@ terraform apply -auto-approve
 
 ```bash
 Outputs:
-loadbalancer_public_ip = ${loadbalancer_public_ip}
+loadbalancer_ip = ${loadbalancer_ip}
 ```
 
 通过相关的端口访问不同的服务
 
 ```bash
-Dashboard: ${loadbalancer_public_ip}:18083
-MQTT: ${loadbalancer_public_ip}:1883
+Dashboard: ${loadbalancer_ip}:18083
+MQTT: ${loadbalancer_ip}:1883
 ```
 
 ## 销毁

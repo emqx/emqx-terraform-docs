@@ -29,6 +29,10 @@
           "path": "getting-started/getting-started-azure"
         },
         {
+          "title": "GCP",
+          "path": "getting-started/getting-started-gcp"
+        },
+        {
           "title": "AliCloud",
           "path": "getting-started/getting-started-ali"
         }
@@ -63,6 +67,10 @@
         {
           "title": "Azure",
           "path": "getting-started/getting-started-azure"
+        },
+        {
+          "title": "GCP",
+          "path": "getting-started/getting-started-gcp"
         },
         {
           "title": "阿里云",
