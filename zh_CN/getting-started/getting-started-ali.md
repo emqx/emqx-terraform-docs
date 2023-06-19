@@ -1,6 +1,6 @@
 # 阿里云上部署
 
-这个 Terraform 模块旨在在阿里云上部署 EMQX 或 EMQX Enterprise。EMQ X是一个可扩展且开源的 MQTT 代理，用于连接物联网设备。
+这个 Terraform 模块旨在在阿里云上部署 EMQX 或 EMQX Enterprise。EMQX 是一个可扩展且开源的 MQTT 代理，用于连接物联网设备。
 
 ## 兼容性
 
@@ -68,7 +68,7 @@ terraform apply -auto-approve
 
 > **Note**
 
-> 如果您正在部署 EMQX Enterprise 并且需要超过10个配额，请申请EMQX许可证，并在 `terraform apply` 命令中作为变量传递。
+> 如果您正在部署 EMQX Enterprise 并且需要超过10个配额，请申请 EMQX 许可证，并在 `terraform apply` 命令中作为变量传递。
 
 成功应用后，将输出：
 

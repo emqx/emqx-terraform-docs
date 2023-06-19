@@ -60,7 +60,7 @@ terraform apply -auto-approve
 
 > **Note**
 
-> 如果您要部署 EMQX Enterprise 并且需要超过10个配额，请申请EMQX许可证，并在 terraform apply 命令期间将其作为变量传递。
+> 如果您要部署 EMQX Enterprise 并且需要超过10个配额，请申请 EMQX 许可证，并在 terraform apply 命令期间将其作为变量传递。
 
 应用成功后，它将输出：
 
