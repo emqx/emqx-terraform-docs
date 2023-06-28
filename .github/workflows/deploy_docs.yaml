@@ -25,6 +25,7 @@ jobs:
     - name: clone frontend
       uses: actions/checkout@v3
       with:
+        ref: next
         repository: 'emqx/docs-emqx-com-frontend'
         token: ${{ secrets.CI_GIT_TOKEN }}
         path: frontend
